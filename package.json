@@ -43,6 +43,7 @@
     "egg-ci": "^1.8.0",
     "egg-mock": "^3.16.0",
     "egg-ts-helper": "^1.4.2",
+    "fis-optimizer-html-minifier": "^0.0.9",
     "fis-parser-node-sass": "^1.0.3",
     "fis3": "^3.4.39",
     "fis3-hook-commonjs": "^0.1.27",
