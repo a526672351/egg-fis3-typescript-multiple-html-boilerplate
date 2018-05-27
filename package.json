@@ -49,6 +49,7 @@
     "fis3-hook-node_modules": "^2.3.1",
     "fis3-parser-typescript": "^1.2.2",
     "fis3-postpackager-loader": "^2.1.10",
+    "husky": "^0.14.3",
     "jquery": "^3.3.1",
     "lint-staged": "^7.1.2",
     "prettier": "^1.12.1",
@@ -65,7 +66,7 @@
       "prettier --write"
     ],
     "**/*.{ts}": "lint",
-    "**/*.scss": "lint:style"
+    "**/*.scss": "stylelint --syntax scss"
   },
   "engines": {
     "node": ">=8.9.0"
