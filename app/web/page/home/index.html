@@ -1,0 +1,20 @@
+{# <!-- 继承母模板 --> #}
+{% extends "../../../view/layout/base.html" %}
+{% block global %}
+<head>
+    {{ super() }}
+    <!--STYLE_PLACEHOLDER-->
+</head>
+{% endblock %}
+
+{% block content %}
+  <p>https://github.com/a526672351/egg-fis3-typescript-multiple-html-boilerplate</p>
+{% endblock %}
+
+{% block script %}
+<!--RESOURCEMAP_PLACEHOLDER-->
+<!--SCRIPT_PLACEHOLDER-->
+<script>
+  require(['index']);
+</script>
+{% endblock %}

@@ -1,0 +1,17 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+{% if title %}
+  <title>{{title}}</title>
+{% else %}
+  <title>基于 Egg + Fis3+ TypeScript + Nunjucks 多页面服务端渲染同构工程骨架项目</title>
+{% endif %}
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content-type="text/x-component" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+{% if metas %}
+{% for itemKey, itemValue in metas %}
+  <meta name="{{ itemKey }}" content="{{ itemValue }}" />
+{% endfor %}  
+{% else %}
+  <meta name="keywords" content="Egg.js,Fis3,TypeScript,Nunjucks">
+  <meta name="description" content="基于 Egg + Fis3+ TypeScript + Nunjucks 多页面服务端渲染同构工程骨架项目">
+{% endif %}

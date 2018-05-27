@@ -1,0 +1,15 @@
+{# 基础模板 #}
+<!DOCTYPE html>
+<html lang="en">
+{% block global %}
+  {% include '../widget/global/index.html' %}
+{% endblock %}{# MEATA内容 #} 
+<body>
+  {% include '../widget/common/header/header.html' %}
+    {% block content %}{% endblock %}{# 页面内容 #}
+  {% include '../widget/common/footer/footer.html' %}
+
+  <script type="text/javascript" src="../widget/global/mod.js"></script><!--ignore-->
+  {% block script %}{% endblock %}{# 脚本内容 #}
+</body>
+</html>
