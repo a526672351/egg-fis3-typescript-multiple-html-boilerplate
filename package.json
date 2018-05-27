@@ -21,6 +21,7 @@
     "ci": "npm run lint && npm run cov && npm run tsc",
     "autod": "autod",
     "lint": "tslint .",
+    "lint:style": "stylelint --syntax scss \"app/web/**/*.scss\" --fix",
     "clean": "ets clean"
   },
   "dependencies": {
@@ -47,6 +48,9 @@
     "fis3-postpackager-loader": "^2.1.10",
     "jquery": "^3.3.1",
     "rimraf": "^2.6.2",
+    "stylelint": "^9.2.1",
+    "stylelint-config-prettier": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
     "tslib": "^1.9.0",
     "tslint": "^4.0.0",
     "typescript": "^2.8.1"
