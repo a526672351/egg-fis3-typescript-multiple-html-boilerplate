@@ -1,6 +1,6 @@
-# hackernews-async-ts
+# egg-fis3-typescript-multiple-html-boilerplate
 
-[Hacker News](https://news.ycombinator.com/) showcase using typescript && egg
+Based on Egg.js + Fis3+ TypeScript + Nunjucks multi page server rendering isomorphic engineering skeleton project
 
 ## QuickStart
 
@@ -8,6 +8,7 @@
 
 ```bash
 $ npm i
+$ npm run web
 $ npm run dev
 $ open http://localhost:7001/
 ```
