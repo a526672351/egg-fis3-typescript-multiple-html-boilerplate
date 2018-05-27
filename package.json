@@ -45,7 +45,7 @@
     "fis3-hook-node_modules": "^2.3.1",
     "fis3-parser-typescript": "^1.2.2",
     "fis3-postpackager-loader": "^2.1.10",
-    "jquery": "^1.12.4",
+    "jquery": "^3.3.1",
     "rimraf": "^2.6.2",
     "tslib": "^1.9.0",
     "tslint": "^4.0.0",
