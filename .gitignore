@@ -9,13 +9,11 @@ logs/
 .vscode
 *.swp
 *.lock
-*.js
 
 app/public/
 app/view/
 app/**/*.js
 test/**/*.js
-config/**/*.js
 app/**/*.map
 test/**/*.map
 config/**/*.map
