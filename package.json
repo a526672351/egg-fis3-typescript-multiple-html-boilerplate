@@ -7,6 +7,7 @@
     "typescript": true
   },
   "scripts": {
+    "precommit": "npm run lint-staged",
     "web": "npm run web:clean && cross-env NODE_ENV=local fis3 release -uwL",
     "web:prod": "npm run web:clean && fis3 release prod -u",
     "web:clean": "rimraf ./app/public && rimraf ./app/view ",
@@ -20,9 +21,11 @@
     "tsc": "ets && tsc -p tsconfig.json",
     "ci": "npm run lint && npm run cov && npm run tsc",
     "autod": "autod",
-    "lint": "tslint .",
+    "lint": "tslint . --fix",
+    "lint-staged": "lint-staged",
     "lint:style": "stylelint --syntax scss \"app/web/**/*.scss\" --fix",
-    "clean": "ets clean"
+    "clean": "ets clean",
+    "prettier": "prettier --write ./app/web/**/*"
   },
   "dependencies": {
     "egg": "^2.6.1",
@@ -47,6 +50,8 @@
     "fis3-parser-typescript": "^1.2.2",
     "fis3-postpackager-loader": "^2.1.10",
     "jquery": "^3.3.1",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
     "stylelint": "^9.2.1",
     "stylelint-config-prettier": "^3.2.0",
@@ -54,6 +59,13 @@
     "tslib": "^1.9.0",
     "tslint": "^4.0.0",
     "typescript": "^2.8.1"
+  },
+  "lint-staged": {
+    "**/*.{ts,scss}": [
+      "prettier --write"
+    ],
+    "**/*.{ts}": "lint",
+    "**/*.scss": "lint:style"
   },
   "engines": {
     "node": ">=8.9.0"
