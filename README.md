@@ -22,6 +22,10 @@ $ npm run tsc
 $ npm start
 ```
 
+### Features
+
+- Build code inspection workflows with husky and lint-staged
+
 ### Npm Scripts
 
 - Use `npm run lint` to check code style
