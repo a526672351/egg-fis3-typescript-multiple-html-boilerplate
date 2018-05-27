@@ -32,3 +32,7 @@ $ npm start
 
 - Node.js 8.x
 - Typescript 2.8+
+
+## License
+
+[MIT](LICENSE)
