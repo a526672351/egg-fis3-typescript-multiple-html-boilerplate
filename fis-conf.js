@@ -76,6 +76,10 @@ fis.match('**.scss', {
   // from .scss to .css
   rExt: '.css',
   parser: fis.plugin('node-sass'),
+  preprocessor: fis.plugin('autoprefixer', {
+    "browsers": ["Android >= 2.1", "iOS >= 4", "ie >= 8", "firefox >= 15"],
+    "cascade": true
+  }),
   url: `${prefix}$0`,
   deploy: fis.plugin('local-deliver', {
     to: public
@@ -99,7 +103,7 @@ fis.match('**.html', {
 })
 
 // settings packager file
-fis.match('/pkg/**.js', {
+fis.match('/pkg/**', {
   useHash: false,
   url: `${prefix}$0`,
   deploy: fis.plugin('local-deliver', {
