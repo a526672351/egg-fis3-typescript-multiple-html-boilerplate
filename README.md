@@ -25,6 +25,7 @@ $ npm start
 ### Features
 
 - Build code inspection workflows with husky and lint-staged
+- Develop / Deploy with Docker
 
 ### Npm Scripts
 
@@ -36,6 +37,15 @@ $ npm start
 
 - Node.js 8.x
 - Typescript 2.8+
+- docker
+- docker-compose
+
+### Docker Compose
+
+- docker-compose.yml
+- Use `docker-compose up -d` to start
+- Use `docker-compose down` to stop
+- Use `docker-compose down -v` to remove volume/cache
 
 ## License
 

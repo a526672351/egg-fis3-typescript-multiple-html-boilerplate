@@ -7,6 +7,7 @@ COPY package.json /usr/src/app/
 RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 RUN cnpm i
 COPY . /usr/src/app
-RUN  npm run web:prod
+RUN npm run web:prod
+RUN npm run tsc
 EXPOSE 7001
-CMD npm run dev
+CMD npm run docker
