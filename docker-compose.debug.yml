@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  egg-fis3-typescript-multiple-html-boilerplate:
+    image: egg-fis3-typescript-multiple-html-boilerplate
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 7001:7001
+      - 9229:9229
+    ## set your startup file here
+    command: node --inspect index.js

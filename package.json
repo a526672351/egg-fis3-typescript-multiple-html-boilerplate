@@ -11,6 +11,7 @@
     "web": "npm run web:clean && cross-env NODE_ENV=local fis3 release -uwL",
     "web:prod": "npm run web:clean && fis3 release prod -u",
     "web:clean": "rimraf ./app/public && rimraf ./app/view ",
+    "docker": "egg-scripts start --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
     "start": "egg-scripts start --daemon --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
     "stop": "egg-scripts stop --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
     "dev": "egg-bin dev -r egg-ts-helper/register",

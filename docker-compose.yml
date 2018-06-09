@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+  egg-fis3-typescript-multiple-html-boilerplate:
+    image: egg-fis3-typescript-multiple-html-boilerplate
+    build: .
+    environment:
+      NODE_ENV: production
+    networks:
+      - docker_hqc
+    ports:
+      - 7001:7001
+
+networks:
+  docker_hqc:
+    driver: bridge    
