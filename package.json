@@ -8,13 +8,13 @@
   },
   "scripts": {
     "precommit": "npm run lint-staged",
-    "web": "npm run web:clean && cross-env NODE_ENV=local fis3 release -uwL",
+    "build": "cross-env NODE_ENV=local fis3 release -uwL",
     "web:prod": "npm run web:clean && fis3 release prod -u",
-    "web:clean": "rimraf ./app/public && rimraf ./app/view ",
+    "web:clean": "rimraf ./app/public/* && rimraf ./app/view/*",
     "docker": "egg-scripts start --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
     "start": "egg-scripts start --daemon --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
     "stop": "egg-scripts stop --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
-    "dev": "egg-bin dev -r egg-ts-helper/register",
+    "dev": "npm run web:clean && egg-bin dev -r egg-ts-helper/register",
     "debug": "egg-bin debug -r egg-ts-helper/register",
     "test-local": "egg-bin test -r egg-ts-helper/register",
     "test": "npm run lint -- --fix && npm run test-local",
@@ -31,6 +31,7 @@
   "dependencies": {
     "egg": "^2.6.1",
     "egg-scripts": "^2.6.0",
+    "egg-view-assets": "^1.1.2",
     "egg-view-nunjucks": "^2.2.0"
   },
   "devDependencies": {
