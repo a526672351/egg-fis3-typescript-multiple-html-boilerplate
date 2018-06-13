@@ -14,7 +14,7 @@
     "docker": "egg-scripts start --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
     "start": "egg-scripts start --daemon --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
     "stop": "egg-scripts stop --title=egg-server-egg-fis3-typescript-multiple-html-boilerplate",
-    "dev": "npm run web:clean && egg-bin dev -r egg-ts-helper/register",
+    "dev": "npm run web:clean && egg-bin dev -r -s egg-ts-helper/register",
     "debug": "egg-bin debug -r egg-ts-helper/register",
     "test-local": "egg-bin test -r egg-ts-helper/register",
     "test": "npm run lint -- --fix && npm run test-local",
