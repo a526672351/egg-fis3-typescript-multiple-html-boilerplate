@@ -9,10 +9,12 @@ logs/
 .vscode
 *.swp
 *.lock
+package-lock.json
 
 app/public/
 app/view/
 app/**/*.js
+!app/web/**/*.js
 test/**/*.js
 app/**/*.map
 test/**/*.map
